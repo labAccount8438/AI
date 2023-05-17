@@ -1,0 +1,6 @@
+a=(('333','33'),('1234','55'))
+print(a)
+def con(a):
+    r=tuple((int(x[0]),int(x[1]))for x in a)
+    return r
+print(con(a))

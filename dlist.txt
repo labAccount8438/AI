@@ -1,0 +1,8 @@
+lis=[]
+n=int(input("Enter Limit "))
+for i in range(0,n):
+    i =input("Enter element ")
+    lis.append(i)
+print(lis)
+list2 = list(dict.fromkeys(lis))
+print(list2)

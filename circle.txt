@@ -1,0 +1,10 @@
+class circle:
+    def area(self,r):
+        return(3.14*r*r)
+    def per(self,r):
+        return(2*3.14*r)
+    def __init__(self,r):
+        print(self.area(r))
+        print(self.per(r))
+c=circle(5)
+

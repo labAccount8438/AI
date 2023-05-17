@@ -1,0 +1,36 @@
+n1=int(input("first no"))
+n2=int(input("second no"))
+def max():
+    if(n1>n2):
+        print(n1)
+    else:
+        print(n2)
+def bet():
+    for i in range(n1,n2+1):
+        print(i)
+
+def sum():
+    print("sum = ",n1+n2)
+    print("avg = ",(n1+n2)/2)
+
+ch=0
+while(ch!=4):
+    print("1.maximum")
+    print("2.no between ",n1," and ",n2)
+    print("3.sum and average")
+    print("1.Exit")
+
+    ch=int(input("enter choice"))
+
+    if(ch==1):
+        max()
+    if(ch==2):
+        bet()
+    if(ch==3):
+        sum()
+    if(ch==4):
+        print("EXIT")
+
+
+
+

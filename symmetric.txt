@@ -1,0 +1,22 @@
+a=[]
+n=int(input("Enter same No of rows and columns i.e. n = "))
+for i in range(n):
+    b=[]
+    for j in range(n):
+        b.append(int(input()))
+    a.append(b)
+
+
+for i in range(n):
+    for j in range(n):
+       print(a[i][j],end=" ")
+    print()
+c=0
+for i in range(n):
+    for j in range(n):
+        if(a[i][j]!=a[j][i]):
+            c=c+1
+if(c==0):
+    print("matrix is symmetric")
+else:
+    print("matrix is asymmetric")

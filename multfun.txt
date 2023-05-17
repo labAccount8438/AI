@@ -1,0 +1,19 @@
+n=int(input("Enter limit"))
+def accept(n):
+    a=[]
+    for i in range(n):
+        a.append([])
+        for j in range(n):
+            a[i].append(int(input()))
+    return a
+print(accept(n))
+a=accept(n)
+b=accept(n)
+
+def display(a):
+    for i in range(n):
+        for j in range(n):
+             print(a[i][j],end=" ")
+        print("")
+display(a)
+display(b)
